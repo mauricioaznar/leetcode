@@ -5,6 +5,7 @@ function fractionToDecimal(numerator, denominator) {
 
     let str = ''
 
+    // add minus sign if denominator and numerator are different
     if (Math.sign(numerator) !== Math.sign(denominator)) {
         str += '-'
     }
@@ -18,6 +19,8 @@ function fractionToDecimal(numerator, denominator) {
 
     str += integer
 
+
+    // if the remainder is different than 0, add the point sign
     if (rem !== 0) {
         str += '.'
     }
