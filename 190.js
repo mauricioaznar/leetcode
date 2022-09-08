@@ -3,18 +3,10 @@
  * @return {number} - a positive integer
  */
 var reverseBits = function(n) {
-    
     const bits = to32bits(n)
-    const reversedBits = reverse(str)
-    
-    console.log(reversedBits)
-    
-    const num = toDecimal(reversedBits)
-    
-    console.log(num)
-    
+    const reversedBits = reverse(str) 
+    const num = toDecimal(reversedBits) 
     return num
-    
 };
 
 
