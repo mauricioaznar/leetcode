@@ -42,18 +42,19 @@ var convert1 = function(s, n) {
 
 /**
  * @param {string} s
- * @param {number} numRows
+ * @param {number} n
  * @return {string}
  */
-var convert2 = function(s, n) {
+var convert2 = function (s, n) {
     if (s.length === 0 || n === 1) return s
 
 
-    const arr = Array(n).fill(null).map(e => new Array())
+    const arr = Array(n).fill(null).map(e => [])
 
     let goingUp = true
 
     let index = 1
+
 
 
     for (let i = 0; i < s.length; i++) {
@@ -71,7 +72,6 @@ var convert2 = function(s, n) {
         } else {
             index = index - 1
         }
-
 
 
     }
