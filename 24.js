@@ -15,6 +15,8 @@ var swapPairs = function(head) {
 
     let curr = head
 
+
+    // if curr node has next node, switch values and move 2 nodes ahead
     while (curr && curr.next) {
         const next = curr.next
 
