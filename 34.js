@@ -9,6 +9,7 @@ var searchRange = function(nums, target) {
     return [left, right]
 };
 
+// regular binary search
 var binarySearch = function (nums, target, leftBias) {
     let l = 0
     let r = nums.length - 1
@@ -20,6 +21,7 @@ var binarySearch = function (nums, target, leftBias) {
         } else if (target < nums[mid]) {
             r = mid -1
         } else if (target === nums[mid]) {
+            // save last i and continue moving left or right
             i = mid
             if (leftBias) {
                 r = mid - 1
