@@ -14,3 +14,9 @@ var climbStairs = function(n) {
 
     return map[n - 1];
 };
+
+/*
+Notes:
+- result is equal to the sum of the previous two values
+
+ */
