@@ -35,3 +35,7 @@ var merge = function(nums1, m, nums2, n) {
 
     }
 };
+
+/* Notes:
+    Substitute starting from the back
+ */
